@@ -58,3 +58,15 @@ const showHiddenPass = (loginPass, loginEye) =>{
 }
 
 showHiddenPass('login-pass','login-eye')
+
+document.getElementById('logoutButton').addEventListener('click', function() {
+    // Perform logout logic, like clearing session data or redirecting to the login page
+    alert('You have been logged out.');
+    window.location.href = '/login';  // Redirect to the login page
+});
+
+
+//dashboard - js
+function logout(){
+    localStorage.removeItem("token")
+}

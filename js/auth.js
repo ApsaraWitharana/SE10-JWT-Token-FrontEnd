@@ -51,6 +51,7 @@ function userRegistation() {
         success:function (response){
             console.log(response.data.token)
             localStorage.setItem("token", response.data.token)
+            window.location.href = "index.html"
             alert("save successfully!!")
         },
         error:function (error){
