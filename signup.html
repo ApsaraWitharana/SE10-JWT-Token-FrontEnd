@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/scss">
+  <link rel="stylesheet" href="/css/scss/components/login.scss">
+  <link rel="stylesheet" href="/css/scss/components/breakpoints.scss">
+  <link rel="stylesheet" href="/css/scss/base/base.scss">
+  <link rel="stylesheet" href="/css/scss/config/variables.scss">
+  <link rel="stylesheet" href="/css/components/login.css">
+  <link rel="stylesheet" href="http://localhost:63342/css/components/login.css">
+
+
+
+  <title>Animated Signup Form</title>
+</head>
+<body>
+<div class="login">
+  <img src="/image/tree-736885_640.jpg" alt="login image" class="login__img">
+
+  <form action="" class="login__form">
+    <h1 class="login__title">Sign Up</h1>
+
+    <div class="login__content">
+      <!-- User Name Input -->
+      <div class="login__box">
+        <i class="ri-user-3-line login__icon"></i>
+        <div class="login__box-input">
+          <input type="text" required class="login__input" id="username" placeholder=" ">
+          <label for="username" class="login__label">User Name</label>
+        </div>
+      </div>
+
+      <!-- Email Input -->
+      <div class="login__box">
+        <i class="ri-mail-line login__icon"></i>
+        <div class="login__box-input">
+          <input type="email" required class="login__input" id="login-email" placeholder=" ">
+          <label for="login-email" class="login__label">Email</label>
+        </div>
+      </div>
+
+      <!-- Password Input -->
+      <div class="login__box">
+        <i class="ri-lock-2-line login__icon"></i>
+        <div class="login__box-input">
+          <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+          <label for="login-pass" class="login__label">Password</label>
+          <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+        </div>
+      </div>
+
+<!--      &lt;!&ndash; Confirm Password Input &ndash;&gt;-->
+<!--      <div class="login__box">-->
+<!--        <i class="ri-lock-2-line login__icon"></i>-->
+<!--        <div class="login__box-input">-->
+<!--          <input type="password" required class="login__input" id="login-passconfirm" placeholder=" ">-->
+<!--          <label for="login-passconfirm" class="login__label">Confirm Password</label>-->
+<!--          <i class="ri-eye-off-line login__eye" id="login-eye-confirm"></i>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+
+    <!-- Remember Me and Forgot Password -->
+    <div class="login__check">
+      <div class="login__check-group">
+        <input type="checkbox" class="login__check-input" id="login-check">
+        <label for="login-check" class="login__check-label">Remember me</label>
+      </div>
+
+      <a href="#" class="login__forgot">Forgot Password?</a>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="button" class="login__button" id="savepost" onclick="userRegistation()">Sign Up</button>
+
+    <!-- Register Link -->
+    <p class="login__register">
+      Don't have an account? <a href="signin.html">Login</a>
+    </p>
+  </form>
+</div>
+
+<!--=============== MAIN JS ===============-->
+<!--<script src="/js/main.js"></script>-->
+<script src="/js/jquery-3.7.1.min.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>
